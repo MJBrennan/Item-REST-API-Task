@@ -6,7 +6,7 @@ A simple REST API built with the PHP microframework Lumen
 
 Allows users to Create, Read, Update, Delete media file names
 
-Project used a SQL Lite database
+Project used an SQL Lite database
 
 Some features I included was using Logging so database changes can be tracked easily, using Lumens Models to easily deal with data updates and exeception handling in case of an error. 
 
@@ -28,7 +28,7 @@ POST: /item?file_name={file_name}&media_type={media_type}
 
 Update item
 
-PUT: /update/4?file_name={file_name}&media_type={media_type}
+PUT: /update/{4}?file_name={file_name}&media_type={media_type}
 
 Delete item
 
