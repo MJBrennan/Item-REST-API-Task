@@ -53,7 +53,7 @@ class Handler extends ExceptionHandler
         return response()->json([
         'error' => [
             'code' => $rendered->getStatusCode(),
-            'message' => "Endpoint Not Found",
+            'message' => "Problem with request",
         ]
     ], $rendered->getStatusCode());
     }
