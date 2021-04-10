@@ -48,6 +48,8 @@ app/Http/Controllers/ItemController.php
 
 Run on local:
 
+Requirements: php 7.2 or greater, composer
+
 1. Clone from GIT and navigate to that directory:
 
 ```
@@ -77,7 +79,7 @@ php -S localhost:8000 -t public
 
 ```
 
-localhost:8000
+localhost:8000/items
 
 ```
 

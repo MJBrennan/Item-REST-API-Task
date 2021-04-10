@@ -49,6 +49,12 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Throwable $exception)
     {
-        return parent::render($request, $exception);
+        $rendered = parent::render($request, $exception);
+        return response()->json([
+        'error' => [
+            'code' => $rendered->getStatusCode(),
+            'message' => "Endpoint Not Found",
+        ]
+    ], $rendered->getStatusCode());
     }
 }
