@@ -28,7 +28,7 @@ POST: /item?file_name={file_name}&media_type={media_type}
 
 Update item
 
-PUT: /update/{4}?file_name={file_name}&media_type={media_type}
+PUT: /update/{id}?file_name={file_name}&media_type={media_type}
 
 Delete item
 
